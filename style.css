@@ -28,6 +28,20 @@ body{
     background-color: #fc6e6e;
     border: none;
 }
+.articles{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-family: "Dongle", sans-serif;
+    font-size: 48px;
+    justify-content: center;
+    top: 300px;
+    left: 25%;
+    background-color: #fc6e6e;
+    border: none;
+}
 .trainings-menu{
     position: relative;
     flex-direction: column;
@@ -35,17 +49,32 @@ body{
     width: 40%;
     font-family: "Dongle", sans-serif;
     font-size: 30px;
-    justify-content: center;
     top: 50px;
     left: 25%;
-    border: none;
     background-color: #ff5555;
     padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-.dropdown-item{
+.articles-menu{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    font-family: "Dongle", sans-serif;
+    font-size: 30px;
+    top: 100px;
+    left: 25%;
+    background-color: #ff5555;
+    padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.dropdown-toggle:hover, .dropdown-toggle.show{
+    background-color: #ffffff;
+    color: #fc6e6e;
     
 }
 .d1{
