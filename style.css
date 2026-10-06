@@ -14,6 +14,18 @@ body{
     top: -5px;
     position: relative;
 }
+.desc{
+    display: flex;
+    flex-direction: column;
+    font-family: "Dongle", sans-serif;
+    font-size: 40px;
+    position: relative;
+    bottom: -24em;
+    left: 5px;
+}
+.training-dropdown{
+    
+}
 .trainings{
     display: flex;
     position: relative;
