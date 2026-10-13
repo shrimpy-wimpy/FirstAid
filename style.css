@@ -101,3 +101,85 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        .question-block {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question-block:last-child {
+            border-bottom: none;
+        }
+        p {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: background 0.2s;
+            width: fit-content;
+        }
+        label:hover {
+            background-color: #f0f4f8;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+        button {
+            background-color: #ff5555;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #fc6e6e;
+        }
+        #reset-btn {
+            background-color: #95a5a6;
+        }
+        #reset-btn:hover {
+            background-color: #7f8c8d;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        /* Feedback classes */
+        .correct {
+            color: #27ae60;
+            background-color: #e8f8f5 !important;
+        }
+        .incorrect {
+            color: #c0392b;
+            background-color: #fdebd0 !important;
+        }
+
+        .hidden{
+            /*display: none;*/
+        }
