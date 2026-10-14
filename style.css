@@ -23,9 +23,6 @@ body{
     bottom: -24em;
     left: 5px;
 }
-.training-dropdown{
-    
-}
 .trainings{
     display: flex;
     position: relative;
@@ -180,6 +177,14 @@ body{
             background-color: #fdebd0 !important;
         }
 
-        .hidden{
-            /*display: none;*/
-        }
+.home{
+    position: relative;
+    bottom: 90%;
+    left: 10px;
+    background-color: #ff5555;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Dongle", sans-serif;
+}
