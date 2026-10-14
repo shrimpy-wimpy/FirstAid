@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heimlich Maneuver Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Heimlich Maneuver</h1>
+    <div class="video-container">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PV2LVz-ol-E?si=LI4nNFrnORSgu-Po"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+    </div>
+
+    <div class="quiz-container hidden">
+    
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question-block" id="q1-block">
+                <p>1. How should a choking infant under one year old be treated instead of using the standard Heimlich maneuver?</p>
+                <label><input type="radio" name="q1" value="a" data-correct="true"> Hold face down and forcefully strike between the shoulder blades.</label>
+                <label><input type="radio" name="q1" value="b"> Position arms around the chest and perform quick inward thrusts.</label>
+                <label><input type="radio" name="q1" value="c"> Lean the infant over the back of a hard chair and apply pressure.</label>
+                <label><input type="radio" name="q1" value="d"> Place your fist two inches above the belly button and thrust upward.</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-block" id="q2-block">
+                <p>2. What motion should be used when applying thrusts during the Heimlich maneuver?</p>
+                <label><input type="radio" name="q2" value="b"> A continuous slow pushing motion.</label>
+                <label><input type="radio" name="q2" value="a" data-correct="true"> An inward and upward J-motion.</label>
+                <label><input type="radio" name="q2" value="c"> A downward pressing motion.</label>
+                <label><input type="radio" name="q2" value="d"> A steady side-to-side squeezing motion.</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-block" id="q3-block">
+                <p>3. Where should you place your fist when performing the Heimlich maneuver on a pregnant person?</p>
+                <label><input type="radio" name="q3" value="a"> Directly over the lower abdomen.</label>
+                <label><input type="radio" name="q3" value="b"> Two inches above the belly button.</label>
+                <label><input type="radio" name="q3" value="c"> Between the shoulder blades.</label>
+                <label><input type="radio" name="q3" value="d" data-correct="true"> In the center of their chest.</label>
+            </div>
+
+            <div class="btn-container">
+                <button id="hm" type="button" onclick="submitQuiz()">Submit Answers</button>
+            </div>
+        </form>
+    </div>
+
+    <a class="home" id="home" href="home.html">Home</a>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
