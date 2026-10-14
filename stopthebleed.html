@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heimlich Maneuver Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Stop the Bleed</h1>
+    <div class="video-container">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/u3nrDb5XjSI?si=PLd36iNMaFSFMTqW"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+    </div>
+
+    <div class="quiz-container hidden">
+    
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question-block" id="q1-block">
+                <p>1. Where should a tourniquet be positioned relative to a life-threatening wound on an arm or leg?</p>
+                <label><input type="radio" name="q1" value="a"> Directly over the center of the bleeding wound.</label>
+                <label><input type="radio" name="q1" value="b"> Directly over the nearest joint above the wound.</label>
+                <label><input type="radio" name="q1" value="c" data-correct="true"> 2 to 3 inches above the wound, closer to the torso.</label>
+                <label><input type="radio" name="q1" value="d"> 2 to 3 inches below the wound, away from the torso.</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-block" id="q2-block">
+                <p>2. What critical piece of information must be documented on or near the tourniquet after securing it?</p>
+                <label><input type="radio" name="q2" value="b"> The specific brand and model of the tourniquet used.</label>
+                <label><input type="radio" name="q2" value="a"> The heart rate and blood pressure of the victim.</label>
+                <label><input type="radio" name="q2" value="c" data-correct="true"> The exact time the tourniquet was applied.</label>
+                <label><input type="radio" name="q2" value="d"> The patient's full legal name and blood type.</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-block" id="q3-block">
+                <p>3. What is the appropriate action if a properly tightened tourniquet fails to stop the bleeding?</p>
+                <label><input type="radio" name="q3" value="a"> Remove the tourniquet and switch to simple elevation.</label>
+                <label><input type="radio" name="q3" value="b"> Move the tourniquet below the wound location.</label>
+                <label><input type="radio" name="q3" value="c"> Loosen the current tourniquet and attempt reapplication.</label>
+                <label><input type="radio" name="q3" value="d" data-correct="true"> Apply a second tourniquet directly above the first tourniquet.</label>
+            </div>
+
+            <div class="btn-container">
+                <button id="hm" type="button" onclick="submitQuiz()">Submit Answers</button>
+            </div>
+        </form>
+    </div>
+
+    <a class="home" id="home" href="home.html">Home</a>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
