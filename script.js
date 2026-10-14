@@ -20,22 +20,24 @@ function submitQuiz() {
         questions.forEach(q => {
             const selected = document.querySelector(`input[name="${q}"]:checked`);
             const correctInput = document.querySelector(`input[name="${q}"][data-correct="true"]`);
-            
-            // Disable all radio buttons after submission
-            const radios = document.querySelectorAll(`input[name="${q}"]`);
-            radios.forEach(radio => radio.disabled = true);
 
             // Highlight answers
             if (selected === correctInput) {
                 selected.parentElement.classList.add('correct');
                 score++;
-            } else {
-                if (selected) selected.parentElement.classList.add('incorrect');
-                correctInput.parentElement.classList.add('correct'); // Show right answer
             }
         });
         
+        if(score === questions.length) {
+            alert("Congratulations!");
+            document.querySelector('button[onclick="submitQuiz()"]').style.display = 'none';
+            
+            // Disable all radio buttons after submission
+            const radios = document.querySelectorAll(`input[name="${q}"]`);
+            radios.forEach(radio => radio.disabled = true);
+        } else {
+            alert("Try again!");
+        }
         // Toggle buttons
-        document.querySelector('button[onclick="submitQuiz()"]').style.display = 'none';
         document.getElementById('reset-btn').style.display = 'inline-block';
     }
